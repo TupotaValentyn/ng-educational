@@ -8,5 +8,5 @@
 
 <hr>
 
-<input type="text" class="form-control" (input)="onInput($event)">
+<input type="text" class="form-control" #myInput (input)="onInput(myInput.value)">
 <p>{{ inputText }}</p>

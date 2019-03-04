@@ -10,8 +10,8 @@ export class CarsComponent {
   addCarStatus = ''
   inputText = ''
 
-  onInput (event: Event) {
-    this.inputText = (<HTMLInputElement>event.target).value 
+  onInput (input: string) {
+    this.inputText = input 
   }
 
   addCar () {
